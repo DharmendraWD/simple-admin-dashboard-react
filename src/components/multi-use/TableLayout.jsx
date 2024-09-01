@@ -35,65 +35,7 @@ const Orders = ({ header, data, columns, isAdd }) => {
       case "/products":
         return {
           type: "product",
-          additionalData: [
-  {
-    name: "Product Name",
-    isOption: false,
-    isDate: false,
-    isTextArea: false,
-    class: "prodName",
-  },
-  {
-    name: "Product Code",
-    isOption: false,
-    isDate: false,
-    isTextArea: false,
-    class: "prodCode",
-  },
-  {
-    name: "Manufactured Date",
-    isOption: false,
-    isDate: true,
-    isTextArea: false,
-    class: "prodManufacDate",
-  },
-  {
-    name: "Expiry Date",
-    isOption: false,
-    isDate: true,
-    isTextArea: false,
-    class: "prodExpDate",
-  },
-  {
-    name: "Price",
-    isOption: false,
-    isDate: false,
-    isTextArea: false,
-    class: "prodPrice",
-  },
-  {
-    name: "Stock Management",
-    isOption: true,
-    isDate: false,
-    isTextArea: false,
-    class: "prodManagement",
-  },
-  {
-    name: "Select Category",
-    isOption: true,
-    isDate: false,
-    isTextArea: false,
-    class: "prodCategory",
-  },
-  {
-    name: "Select Unit",
-    isOption: false,
-    isDate: true,
-    isTextArea: true,
-    class: "prodTextArea",
-  },
-]
-,
+          additionalData: "product",
         };
       default:
         return {};

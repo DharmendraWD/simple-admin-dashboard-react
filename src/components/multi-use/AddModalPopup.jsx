@@ -13,7 +13,7 @@ function AddModalPopup({data}) {
 let renderForAddProduct = true;
 
 
-console.log(data)
+console.log()
 
   return (
     <>
@@ -25,14 +25,22 @@ console.log(data)
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="PopupParent">
-            <div className="popupParentChildren">
-              <div>
-                <label htmlFor="">Product Name</label>
-                <input type="text" />
+          {data && data.type === "product" && (
+            <>
+              <div className="PopupParent">
+                <div className="popupParentChildren">
+                  <div>
+                    <label htmlFor="">Product Name</label>
+                    <input type="text" className="inputAdd inputProdName" />
+                  </div>
+                  <div>
+                    <label htmlFor="">Product Name</label>
+                    <input type="text"  className="inputAdd input"/>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
