@@ -132,3 +132,9 @@ body {
 .inputAdd{
     border: 1px solid;
 }
+
+/* MODAL POPUP */
+.modal-content{
+    width: auto !important;
+    height: auto !important;
+}

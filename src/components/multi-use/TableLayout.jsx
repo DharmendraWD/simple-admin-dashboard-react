@@ -25,12 +25,20 @@ const Orders = ({ header, data, columns, isAdd }) => {
   // Determine the data to pass to the modal based on the URL
   const getModalData = () => {
     switch (location.pathname) {
-      case "/orders":
-        return { type: "order", additionalData: "some order-specific data" };
-      case "/invoice":
+      case "/manufacturer":
         return {
-          type: "invoice",
-          additionalData: "some invoice-specific data",
+          type: "manufacturers",
+          additionalData: "some order-specific data",
+        };
+      case "/retailer":
+        return {
+          type: "retailer",
+          additionalData: "retailer",
+        };
+      case "/distributors":
+        return {
+          type: "distributors",
+          additionalData: "retailer",
         };
       case "/products":
         return {
